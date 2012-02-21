@@ -1,8 +1,11 @@
 {
-  "title": "Cryptography",
+  "title": "Understanding Event Emitters",
   "description": "How to use the crypto module",
   "date": "Fri Aug 26 2011 03:08:50 GMT-0700 (PST)",
   "tags": ["core", "crypto"],
   "authors": ["Joshua Holbrook", "Tim Caswell", "Felix Geisendörfer", "Garen J. Torikian"],
-  "difficulty": 3
+  "difficulty": 3,
+  "categories": [
+    ["Intro"]
+  ]
 }
