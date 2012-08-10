@@ -4,14 +4,16 @@ In order to facilitiate its asynchronisity, Node.js operates with an "event loop
 
 Events are represented in Node.js by the [EventEmitter](../nodejs_ref_guide/eventemitter.html) object. Many objects in Node.js are instances of this object. Using `EventEmitter`'s is fairly straight-forward. You can listen to a specific event by calling the `on()` function on your object, providing the name of the event, as well as a callback closure as the parameters. For example:
 
-    var totalData = '';
-    request
-      .on('data', function(d) {
-       totalData += d;
-      })
-      .on('end', function() {
-        console.log('POST data: %s', totalData);
-      })
+```javascript
+var totalData = '';
+request
+  .on('data', function(d) {
+   totalData += d;
+  })
+  .on('end', function() {
+    console.log('POST data: %s', totalData);
+  })
+```
 
 What this is essentially saying is: when the request object gets data (`.on('data')`), append that string to the global `totalData` variable. When the request object is finished getting data (`.on('end')`), print out the data to the console.
 
