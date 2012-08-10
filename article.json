@@ -3,7 +3,11 @@
   "description": "",
   "date": "Fri Aug 26 2011 03:08:50 GMT-0700 (PST)",
   "tags": ["core", "crypto"],
-  "authors": ["Josh Holbrook", "Tim Caswell", "Felix Geisendörfer", "Garen J. Torikian"],
+  "authors": [
+    "Josh Holbrook",
+    {"name":"Tim Caswell", "url": "https://github.com/creationix"},
+    {"name": "Felix Geisendörfer", "url": "https://github.com/felixge"},
+    "Garen J. Torikian"],
   "difficulty": 3,
   "categories": [
     ["Intro"]
